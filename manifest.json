@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "UnspoilF1TV",
+    "version": "1.0",
+    "description": "Deletes spoilers from f1tv interface",
+    "icons": {
+        "48": "icons\/unspoil.svg",
+        "96": "icons\/unspoil.svg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*:\/\/f1tv.formula1.com\/*"
+            ],
+            "js": [
+                "unspoilF1.js"
+            ]
+        }
+    ]
+}
