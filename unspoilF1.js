@@ -1,5 +1,7 @@
 function removeSpoilers() {
     [].forEach.call(document.querySelectorAll("[class^='podium-winner']"), function (er) {er.style.visibility = 'hidden';});
+
+    [].forEach.call(document.querySelectorAll("[class^='gp-module__winner']"), function (er) {er.style.visibility = 'hidden';});
 }
 
 document.addEventListener('click', function () {
@@ -9,16 +11,11 @@ document.addEventListener('click', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("running again! dom content");
+    console.log("running again! dom");
     removeSpoilers();
-    console.log("spoilers removed dom content");
+    console.log("spoilers removed dom");
 });
 
-window.addEventListener('load', function() {
-    console.log("running again! load");
-    removeSpoilers();
-    console.log("spoilers removed load");
-});
 
 //run intially, just in case! 
 removeSpoilers();

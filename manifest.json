@@ -10,7 +10,7 @@
     "content_scripts": [
         {
             "matches": [
-                "*:\/\/f1tv.formula1.com\/*"
+                "*://f1tv.formula1.com/*"
             ],
             "js": [
                 "unspoilF1.js"
